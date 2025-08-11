@@ -11,80 +11,95 @@
 
 <svelte:head>
 	<title>Tegar Aditya - Portfolio</title>
-	<meta name="description" content="Portfolio of Tegar Aditya, a passionate Fullstack Web Developer specializing in PHP, JavaScript, TypeScript, Golang, and Rust. Building scalable APIs and web applications." />
-	<meta name="keywords" content="Tegar Aditya, portfolio, web developer, fullstack, PHP, JavaScript, TypeScript, Golang, Rust, API development, web applications, backend, frontend" />
+	<meta
+		name="description"
+		content="Portfolio of Tegar Aditya, a passionate Fullstack Web Developer specializing in PHP, JavaScript, TypeScript, Golang, and Rust. Building scalable APIs and web applications."
+	/>
+	<meta
+		name="keywords"
+		content="Tegar Aditya, portfolio, web developer, fullstack, PHP, JavaScript, TypeScript, Golang, Rust, API development, web applications, backend, frontend"
+	/>
 	<meta property="og:title" content="Tegar Aditya | Fullstack Web Developer Portfolio" />
-	<meta property="og:description" content="Discover the work of Tegar Aditya, a skilled Fullstack Web Developer creating scalable and efficient web solutions."/>
+	<meta
+		property="og:description"
+		content="Discover the work of Tegar Aditya, a skilled Fullstack Web Developer creating scalable and efficient web solutions."
+	/>
 	<meta property="og:image" content={ProfileImage1.img.src} />
 	<meta property="og:url" content="https://tegar.dev/" />
 	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Tegar Aditya | Fullstack Web Developer Portfolio" />
-	<meta name="twitter:description" content="Discover the work of Tegar Aditya, a skilled Fullstack Web Developer creating scalable and efficient web solutions." />
+	<meta
+		name="twitter:description"
+		content="Discover the work of Tegar Aditya, a skilled Fullstack Web Developer creating scalable and efficient web solutions."
+	/>
 	<meta name="twitter:image" content={ProfileImage1.img.src} />
 	<meta name="author" content="Tegar Aditya" />
 	<link rel="canonical" href="https://tegar.dev/" />
 </svelte:head>
 
-<div class="flex-grow">
-	<header class="mb-12 flex flex-col items-center md:flex-row">
-		<div class="flip-container mb-6 h-32 w-32 flex-shrink-0 md:mr-8 md:mb-0 md:h-40 md:w-40">
-			<div class="flipper">
-				<div class="front">
-					<enhanced:img
-						class="h-full w-full rounded-full border-4 border-zinc-700 object-cover shadow-lg"
-						sizes="(min-width: 768px) 320px, (min-width: 640px) 240px, 160px"
-						src={ProfileImage1}
-						alt="Tegar Aditya."
-						on:error={handleImageError}
-					/>
-				</div>
-				<div class="back">
-					<enhanced:img
-						class="h-full w-full rounded-full border-4 border-zinc-700 object-cover shadow-lg"
-						sizes="(min-width: 768px) 320px, (min-width: 640px) 240px, 160px"
-						src={ProfileImage0}
-						alt="Alternative view of Tegar Aditya."
-						on:error={handleImageError}
-					/>
+<div class="flex flex-grow flex-col justify-between">
+	<div>
+		<header class="mb-12 flex flex-col items-center md:flex-row">
+			<div class="flip-container mb-6 h-32 w-32 flex-shrink-0 md:mr-8 md:mb-0 md:h-40 md:w-40">
+				<div class="flipper">
+					<div class="front">
+						<enhanced:img
+							class="h-full w-full rounded-full border-4 border-zinc-700 object-cover shadow-lg"
+							sizes="(min-width: 768px) 320px, (min-width: 640px) 240px, 160px"
+							src={ProfileImage1}
+							alt="Tegar Aditya."
+							on:error={handleImageError}
+						/>
+					</div>
+					<div class="back">
+						<enhanced:img
+							class="h-full w-full rounded-full border-4 border-zinc-700 object-cover shadow-lg"
+							sizes="(min-width: 768px) 320px, (min-width: 640px) 240px, 160px"
+							src={ProfileImage0}
+							alt="Alternative view of Tegar Aditya."
+							on:error={handleImageError}
+						/>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div>
-			<h1
-				class="mb-2 text-center font-display text-3xl font-bold text-white md:text-left md:text-4xl"
-			>
-				Hi there, I'm Tegar Aditya! 👋
-			</h1>
-			<p class="text-md text-center text-zinc-400 italic md:text-left md:text-lg">
-				"Building Scalable APIs & Fullstack Web Application | Deployment & Automation Enthusiast"
+			<div>
+				<h1
+					class="mb-2 text-center font-display text-3xl font-bold text-white md:text-left md:text-4xl"
+				>
+					Hi there, I'm Tegar Aditya! 👋
+				</h1>
+				<p class="text-md text-center text-zinc-400 italic md:text-left md:text-lg">
+					"Building Scalable APIs & Fullstack Web Application | Deployment & Automation Enthusiast"
+				</p>
+			</div>
+		</header>
+		<main class="space-y-6 text-sm leading-relaxed md:text-base">
+			<p>
+				Hello! My name is Tegar Aditya, a dedicated and passionate web developer. I thrive on
+				transforming complex ideas into functional and user-friendly web applications. My journey in
+				programming has led me to specialize primarily in the robust world of
+				<span class="font-medium text-white">PHP</span>
+				and the dynamic <span class="font-medium text-white">JavaScript</span> ecosystem, which
+				includes extensive experience with <span class="font-medium text-white">TypeScript</span> for
+				building scalable and maintainable front-end and back-end solutions.
 			</p>
-		</div>
-	</header>
-	<main class="space-y-6 text-sm leading-relaxed md:text-base">
-		<p>
-			Hello! My name is Tegar Aditya, a dedicated and passionate web developer. I thrive on
-			transforming complex ideas into functional and user-friendly web applications. My journey in
-			programming has led me to specialize primarily in the robust world of
-			<span class="font-medium text-white">PHP</span>
-			and the dynamic <span class="font-medium text-white">JavaScript</span> ecosystem, which
-			includes extensive experience with <span class="font-medium text-white">TypeScript</span> for building
-			scalable and maintainable front-end and back-end solutions.
-		</p>
-		<p>
-			Beyond my core expertise, I am constantly exploring and integrating new technologies to
-			enhance performance and solve challenging problems. This includes leveraging the power of
-			<span class="font-medium text-white">Golang</span>
-			for high-performance microservices and server-side operations, and utilizing
-			<span class="font-medium text-white">Rust</span> when efficiency, safety, and concurrency are paramount,
-			particularly in performance-critical web components or system-level tools that support web applications.
-		</p>
-		<p>
-			I'm always eager to learn, contribute, and collaborate on exciting projects that push the
-			boundaries of web development. Feel free to explore my repositories and reach out if you have
-			an interesting idea or just want to connect!
-		</p>
-	</main>
+			<p>
+				Beyond my core expertise, I am constantly exploring and integrating new technologies to
+				enhance performance and solve challenging problems. This includes leveraging the power of
+				<span class="font-medium text-white">Golang</span>
+				for high-performance microservices and server-side operations, and utilizing
+				<span class="font-medium text-white">Rust</span> when efficiency, safety, and concurrency are
+				paramount, particularly in performance-critical web components or system-level tools that support
+				web applications.
+			</p>
+			<p>
+				I'm always eager to learn, contribute, and collaborate on exciting projects that push the
+				boundaries of web development. Feel free to explore my repositories and reach out if you
+				have an interesting idea or just want to connect!
+			</p>
+		</main>
+	</div>
 
 	<footer class="mt-12 text-center text-zinc-400">
 		<div class="mb-4 flex flex-wrap justify-center gap-x-6 gap-y-4 text-sm">
