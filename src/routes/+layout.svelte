@@ -22,7 +22,7 @@
 	<link rel="preload" as="font" type="font/woff2" href={Inter600} crossorigin="anonymous" />
 </svelte:head>
 
-<div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6 py-12 md:py-20">
+<div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6 py-12">
 	{@render children()}
 </div>
 
