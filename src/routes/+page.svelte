@@ -38,10 +38,10 @@
 	<link rel="canonical" href="https://tegar.dev/" />
 </svelte:head>
 
-<div class="flex flex-grow flex-col justify-between">
+<div class="flex grow flex-col justify-between">
 	<div>
 		<header class="mb-12 flex flex-col items-center md:flex-row">
-			<div class="flip-container mb-6 h-32 w-32 flex-shrink-0 md:mr-8 md:mb-0 md:h-40 md:w-40">
+			<div class="flip-container mb-6 h-32 w-32 shrink-0 md:mr-8 md:mb-0 md:h-40 md:w-40">
 				<div class="flipper">
 					<div class="front">
 						<enhanced:img
@@ -169,6 +169,6 @@
 				<span>Verified on Credly</span>
 			</a>
 		</div>
-		<p class="text-xs">&copy; 2025 Tegar Aditya. All Rights Reserved.</p>
+		<p class="text-xs">&copy; { new Date().getFullYear() } Tegar Aditya. All Rights Reserved.</p>
 	</footer>
 </div>
